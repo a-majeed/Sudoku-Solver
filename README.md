@@ -13,7 +13,7 @@ python sudoku.py
 
 Here is a quick little visualization on how the backtracking algorithm works!
 
-<img src="gif/backtracking.gif" width="60%" height="40%" />
+<img src="gif/sudoku-solver-visualization-4bc03fccaaf8ca21.gif" width="60%" height="40%" />
 
 
 
