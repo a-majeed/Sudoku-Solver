@@ -9,4 +9,14 @@ To run the file just simply download the code, go to the correct directory and t
 python sudoku.py
 ```
 
+## Demo
+
+Here is a quick little visualization on how the backtracking algorithm works!
+
+<img src="gif/backtracking.gif" width="60%" height="40%" />
+
+
+
+
+
 

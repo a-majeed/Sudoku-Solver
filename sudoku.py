@@ -84,16 +84,3 @@ def solver(bo):
 solver(board)
 display_board(board)
     
-   
-
-
-
-    
-
-
-        
-
-
-
-
-
