@@ -13,6 +13,12 @@ board = [
 
 def display_board(bo):
 
+    """
+    displays the board
+    :param bo: 2d List of ints
+    :return: None
+    """
+
     for i in range(len(bo)):
         if i % 3 == 0 and i != 0:
             print("- - - - - - - - - - - -")
@@ -30,6 +36,12 @@ def display_board(bo):
 
 
 def find_available(bo):
+
+    """
+    finds an empty space (empty spaces set as 0) in the board
+    :param bo: incomplete board
+    :return: (int, int) row col
+    """
     
     for i in range(len(bo)):
             for j in range(len(bo[0])):
@@ -40,6 +52,14 @@ def find_available(bo):
 
 
 def valid(bo, num, pos):
+
+    """
+    Returns if inputted number attempt is valid
+    :param bo: 2d list of ints
+    :param pos: (row, col)
+    :param num: int
+    :return: bool
+    """
 
     #checking rows
     for i in range(len(bo[0])):
@@ -64,6 +84,12 @@ def valid(bo, num, pos):
 
 
 def solver(bo):
+
+    """
+    Solves the sudoku board 
+    :param bo: 2d list of ints
+    :return: solution
+    """
 
     finder = find_available(bo)
 
