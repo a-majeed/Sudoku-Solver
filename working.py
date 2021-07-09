@@ -63,6 +63,31 @@ def valid(bo, num, pos):
     return True
 
 
+def solver(bo):
+
+    finder = find_available(bo)
+
+    if not finder:
+        return True
+    else:
+        row, column = finder
+    
+    for i in range(1,10):
+        if valid(bo, i, (row, column)):
+            bo[row][column] = i
+
+            if solver(bo):
+                return True
+
+            bo[row][column] = 0
+
+solver(board)
+display_board(board)
+    
+   
+
+
+
     
 
 
